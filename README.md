@@ -1,2 +1,4 @@
-# ChromeTableDateSum
-Extensión de Chrome que agrupa en un sumatorio horas de una tabla.
+# Verificador de Incurridos
+
+Una extensión de Chrome para verificar que las horas que se han metido son correctas.
+
