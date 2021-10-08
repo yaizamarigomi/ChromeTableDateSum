@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "Verificador de Incurridos",
+    "description": "Esta extensión te permite comprobar si has metido bien los incurridos",
+    "version": "1.0",
+    "homepage_url": "https://github.com/",
+    "browser_action": {
+        "default_icon": "favicon.png",
+        "default_popup": "popup.html",
+        "default_title": "Verificador de Incurridos"
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "all_frames": true,
+        "js":      ["scripts/content.js"]
+    }],
+    "permissions": [
+        "activeTab", "storage"
+    ],
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": false
+      },
+    "content_security_policy": "script-src 'self' https://www.gstatic.com/; object-src 'self'"
+}
+
